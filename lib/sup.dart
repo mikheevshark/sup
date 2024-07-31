@@ -198,7 +198,7 @@ class Sup extends StatelessWidget {
           // Title
           if (config.title != null) ...[
             DefaultTextStyle(
-              style: (theme.textTheme.headline6 ?? TextStyle()).copyWith(
+              style: (theme.textTheme.headlineLarge ?? TextStyle()).copyWith(
                 fontSize: 20,
                 fontWeight: FontWeight.w700,
               ),
@@ -211,7 +211,7 @@ class Sup extends StatelessWidget {
           // Subtitle
           if (config.subtitle != null) ...[
             DefaultTextStyle(
-              style: (theme.textTheme.caption ?? TextStyle()).copyWith(
+              style: (theme.textTheme.headlineSmall ?? TextStyle()).copyWith(
                 fontSize: 16,
               ),
               textAlign: _textAlignFromSupAlignment(config.alignment!),
